@@ -50,7 +50,7 @@
       getCurrentage() {
         const today = new Date();
         const birthDate = new Date(this.birthString);
-        const age = today.getFullYear() - birthDate.getFullYear();
+        let age = today.getFullYear() - birthDate.getFullYear();
         const month = today.getMonth() - birthDate.getMonth();
         if (
           month < 0 ||
