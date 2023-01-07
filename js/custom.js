@@ -98,13 +98,23 @@
     const skls1 = document.getElementById("skill1");
     const skls2 = document.getElementById("skill2");
 
+    // console.log(`${skls1.textContent} \n ${skls2.textContent}`);
+
+    skls1.innerHTML = "";
+    skls2.innerHTML = "";
+
     let sk1 = "";
     let sk2 = "";
+
     for (let i = 0; i < ishaan.about.logo.length; i++) {
       sk1 += `<div class="single-skill" data-percentage="${ishaan.resume.percentage[i]}">
       <div class="skill-info">
         <span class="skill-name">${ishaan.about.techStack[i]}</span
-        ><span class="skill-percentage"></span>
+        ><span
+          class="skill-percentage"
+          style="margin-right: 28.5px"
+          >${ishaan.resume.percentage[i]}%</span
+        >
       </div>
       <div class="progress skill-progress">
         <div
@@ -112,6 +122,8 @@
           role="progressbar"
           aria-valuemin="0"
           aria-valuemax="100"
+          aria-valuenow="${ishaan.resume.percentage[i]}"
+          style="width: ${ishaan.resume.percentage[i]}%"
         ></div>
       </div>
     </div>`;
@@ -120,7 +132,11 @@
       sk2 += `<div class="single-skill" data-percentage="${ishaan.resume.percentage[i]}">
       <div class="skill-info">
         <span class="skill-name">${ishaan.about.techStack[i]}</span
-        ><span class="skill-percentage"></span>
+        ><span
+          class="skill-percentage"
+          style="margin-right: 28.5px"
+          >${ishaan.resume.percentage[i]}%</span
+        >
       </div>
       <div class="progress skill-progress">
         <div
@@ -128,6 +144,8 @@
           role="progressbar"
           aria-valuemin="0"
           aria-valuemax="100"
+          aria-valuenow="${ishaan.resume.percentage[i]}"
+          style="width: ${ishaan.resume.percentage[i]}%"
         ></div>
       </div>
     </div>`;
