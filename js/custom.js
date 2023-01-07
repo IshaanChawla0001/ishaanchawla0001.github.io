@@ -130,7 +130,7 @@
       <span class="item-arrow"></span>
       <h5 class="item-title">${element.major}</h5>
       <span class="item-details"
-        >${element.college} /${element.year}</span
+        >${element.college}: ${element.year}</span
       >
       <p class="item-description">
         ${element.location}, ${element.country}
