@@ -15,21 +15,38 @@
       email: "Ishaanchawla35@gmail.com",
       loc: "New York, United States",
       birthString: "1997/11/21",
-      education: {
-        bachelor: {
-          major: "Computer Science",
-          bachelorCollege: "SBSSTC",
+      education: [
+        {
+          major: "Bacherlor's in Computer Science",
+          college: "SBSSTC",
           year: "2015-2019",
           location: "Ferozrpur",
           country: "India",
         },
-        master: {
-          major: "Computer Science",
-          bachelorCollege: "Pace University",
+        {
+          major: " Master's in Computer Science",
+          college: "Pace University",
           year: "2020-2022",
           location: "New York City",
           country: "United States",
         },
+      ],
+      experince: {
+        amazon: [
+          "Software Development Engineer",
+          "Amazon Web Series",
+          "March 2022 - June 2022",
+        ],
+        dataflake: [
+          "Software Development Engineer",
+          "Data Flake",
+          "June 2022 - December 2022",
+        ],
+        itres: [
+          "Software Development Engineer",
+          "IT Resources Inc.",
+          "December 2022 - Present",
+        ],
       },
       about: {
         logo: ["html5", "css3", "js", "react", "python", "java", "git", "ds"],
@@ -94,17 +111,32 @@
     }
     rowTechStack.innerHTML = stack;
 
-    // Skill Page.
+    // resume Page.
+    const education = document.getElementById("education-resume");
+    const experince = document.getElementById("experience-resume");
     const skls1 = document.getElementById("skill1");
     const skls2 = document.getElementById("skill2");
-
-    // console.log(`${skls1.textContent} \n ${skls2.textContent}`);
 
     skls1.innerHTML = "";
     skls2.innerHTML = "";
 
+    let edu = "";
+    let exp = "";
     let sk1 = "";
     let sk2 = "";
+    ishaan.education.forEach(function (element) {
+      console.log(element);
+      edu += ` <div class="resume-item">
+      <span class="item-arrow"></span>
+      <h5 class="item-title">${element.major}</h5>
+      <span class="item-details"
+        >${element.college} /${element.year}</span
+      >
+      <p class="item-description">
+        ${element.location}, ${element.country}
+      </p>
+    </div>`;
+    });
 
     for (let i = 0; i < ishaan.about.logo.length; i++) {
       sk1 += `<div class="single-skill" data-percentage="${ishaan.resume.percentage[i]}">
@@ -151,6 +183,8 @@
     </div>`;
     }
 
+    education.insertAdjacentHTML("afterend", edu);
+    // experince.insertAdjacentHTML("afterend", exp);
     skls1.innerHTML = sk1;
     skls2.innerHTML = sk2;
 
