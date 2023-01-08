@@ -17,10 +17,10 @@
       birthString: "1997/11/21",
       education: [
         {
-          major: "Bacherlor's in Computer Science",
+          major: "Bachelor's in Computer Science",
           college: "SBSSTC",
           year: "2015-2019",
-          location: "Ferozrpur",
+          location: "Ferozepur",
           country: "India",
         },
         {
@@ -31,34 +31,37 @@
           country: "United States",
         },
       ],
-      experince: {
-        amazon: [
-          "Software Development Engineer",
-          "Amazon Web Series",
-          "March 2022 - June 2022",
-        ],
-        dataflake: [
-          "Software Development Engineer",
-          "Data Flake",
-          "June 2022 - December 2022",
-        ],
-        itres: [
-          "Software Development Engineer",
-          "IT Resources Inc.",
-          "December 2022 - Present",
-        ],
-      },
+      experince: [
+        {
+          title: "Software Development Engineer",
+          org: "Amazon Web Series",
+          time: "March 2022 - June 2022",
+          location: "Seattle, United States",
+        },
+        {
+          title: "Software Engineer",
+          org: "Data Flake",
+          time: "June 2022 - December 2022",
+          location: "New York City, United States",
+        },
+        {
+          title: "Software Engineer",
+          org: "IT Resources Inc.",
+          time: "December 2022 - Present",
+          location: "New York City, United States",
+        },
+      ],
       about: {
         logo: ["html5", "css3", "js", "react", "python", "java", "git", "ds"],
         techStack: [
           "Html5",
           "CSS3",
-          "JavaSrcipt",
+          "JavaScript",
           "React",
           "Pyhton",
           "Java",
           "Git",
-          "Data Strcutures",
+          "Data Structures",
         ],
       },
       resume: {
@@ -125,7 +128,6 @@
     let sk1 = "";
     let sk2 = "";
     ishaan.education.forEach(function (element) {
-      console.log(element);
       edu += ` <div class="resume-item">
       <span class="item-arrow"></span>
       <h5 class="item-title">${element.major}</h5>
@@ -135,6 +137,15 @@
       <p class="item-description">
         ${element.location}, ${element.country}
       </p>
+    </div>`;
+    });
+
+    ishaan.experince.forEach(function (element) {
+      exp += ` <div class="resume-item">
+      <span class="item-arrow"></span>
+      <h5 class="item-title">${element.title}</h5>
+      <span class="item-details">${element.org}: ${element.time}</span>
+      <p class="item-description">${element.location}</p>
     </div>`;
     });
 
@@ -184,7 +195,7 @@
     }
 
     education.insertAdjacentHTML("afterend", edu);
-    // experince.insertAdjacentHTML("afterend", exp);
+    experince.insertAdjacentHTML("afterend", exp);
     skls1.innerHTML = sk1;
     skls2.innerHTML = sk2;
 
