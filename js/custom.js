@@ -33,22 +33,16 @@
       ],
       experince: [
         {
-          title: "Software Development Engineer",
-          org: "Amazon Web Series",
-          time: "March 2022 - June 2022",
-          location: "Seattle, United States",
+          title: "React UI Frontend Developer",
+          org: "CNBC",
+          time: "May 2021 - Feb 2023",
+          location: "New York, United States",
         },
         {
           title: "Software Engineer",
-          org: "Data Flake",
-          time: "June 2022 - December 2022",
-          location: "New York City, United States",
-        },
-        {
-          title: "Software Engineer",
-          org: "IT Resources Inc.",
-          time: "December 2022 - Present",
-          location: "New York City, United States",
+          org: "Paytm Payments",
+          time: "Jan 2019 - Jan 2020",
+          location: "Delhi, India",
         },
       ],
       about: {
