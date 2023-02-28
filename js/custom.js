@@ -40,7 +40,7 @@
         },
         {
           title: "Software Engineer",
-          org: "Paytm Payments",
+          org: "News18 India",
           time: "Jan 2019 - Jan 2020",
           location: "Delhi, India",
         },
