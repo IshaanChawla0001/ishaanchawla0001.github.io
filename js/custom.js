@@ -12,7 +12,7 @@
     const ishaan = {
       fullName: "Ishaan Chawla",
       phoneNumber: "+1 (650) 267-0035",
-      email: "Ishaanchawla35@gmail.com",
+      email: "Chawlaishaan35@gmail.com",
       loc: "New York, United States",
       birthString: "1997/11/21",
       education: [
