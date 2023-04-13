@@ -31,7 +31,13 @@
           country: "United States",
         },
       ],
-      experince: [
+      experince: [ 
+        {
+          title: "Mobile Front End Developer",
+          org: "Construct AI",
+          time: "March 2023 - Present",
+          location: "New Jersey, United States",
+        },
         {
           title: "React UI Frontend Developer",
           org: "CNBC",
