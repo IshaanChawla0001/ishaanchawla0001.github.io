@@ -24,7 +24,7 @@
           country: "India",
         },
         {
-          major: " Master's in Computer Science",
+          major: "Master's in Computer Science",
           college: "Pace University",
           year: "2020-2022",
           location: "New York City",
@@ -32,10 +32,16 @@
         },
       ],
       experince: [ 
+         {
+          title: "Software Development Engineer",
+          org: "Construct AI",
+          time: "Sep 2023 - Present",
+          location: "New Jersey, United States",
+        },
         {
           title: "Mobile Front End Developer",
           org: "Construct AI",
-          time: "March 2023 - Present",
+          time: "March 2023 - Sep 2023",
           location: "New Jersey, United States",
         },
         {
