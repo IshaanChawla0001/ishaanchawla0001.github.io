@@ -11,7 +11,7 @@
     "use strict";
     const ishaan = {
       fullName: "Ishaan Chawla",
-      phoneNumber: "+1 (650) 267-0035",
+      phoneNumber: "+1 (415) 603-3652",
       email: "Chawlaishaan35@gmail.com",
       loc: "New York, United States",
       birthString: "1997/11/21",
